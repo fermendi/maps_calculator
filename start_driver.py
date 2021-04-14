@@ -72,9 +72,9 @@ class BasePage:
     def is_element(self, by_locator):
         try:
             WebDriverWait(self.driver, Data.TIMEOUT).until(EC.presence_of_element_located(by_locator))
-            return False
-        except:
             return True
+        except:
+            return False
 
     def search_element(self, by_locator):
         time.sleep(Functions.get_time_step())

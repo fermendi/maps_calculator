@@ -40,7 +40,7 @@ if __name__ == '__main__':
                             maps.get_destination_place(),
                             maps.get_transport(),
                             maps.get_duration(),
-                            Functions.get_string_to_hours(args.time),
+                            args.time,
                             maps.get_distance())
 
                 user.run()
